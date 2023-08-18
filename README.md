@@ -1,1 +1,2 @@
-# deneme
+
+find the longest expression in length by removing the repeated letters. input:'ABCDFFGHI' => output:'ABCDF' and length:5 input:'ABBCCDDEEF' => output:'AB' and length:2 output:'BC' and length:2, output:'CD' and length:2 output:'DE' and length:2 output:'EF' and length:2 To separate non-repeating words, I make two empty lists and then create a for loop. The first list stores the last observation (end) indices of characters in the text. In this way, we can update the starting index of the substrings over the indexes where a character was last seen, and continue with a shorter substring when we see the same character again. The second list is used to store the longest strings
